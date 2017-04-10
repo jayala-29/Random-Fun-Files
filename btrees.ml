@@ -24,3 +24,18 @@ let rec getHeight (n : node) : int =
   match n with
     | Leaf -> 0
     | Node(s, l, r) -> 1 + (max (height l) (height r));;
+
+(printf "%s\n" (inorder_trav bt1));;
+(printf "%s\n" (inorder_trav bt2));;
+(printf "%s\n" (inorder_trav bt3));;
+(printf "%s\n" (inorder_trav bt4));;
+
+(printf "%d\n" (getSize bt1));;
+(printf "%d\n" (getSize bt2));;
+(printf "%d\n" (getSize bt3));;
+(printf "%d\n" (getSize bt4));;
+
+(printf "%d\n" (getHeight bt1));;
+(printf "%d\n" (getHeight bt2));;
+(printf "%d\n" (getHeight bt3));;
+(printf "%d\n" (getHeight bt4));;
